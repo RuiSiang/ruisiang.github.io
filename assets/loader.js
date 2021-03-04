@@ -20,6 +20,16 @@ function popIcons() {
 
 function popIcon(element, index) {
   setTimeout(function () {
-    element.style.opacity = 1
+    //element.style.opacity = 1
+    id = setInterval(frame, 20)
+    iter = 0
+    function frame() {
+      if (iter === 10) {
+        clearInterval(id)
+      } else {
+        iter += 1
+        element.style.opacity = iter / 10
+      }
+    }
   }, index * 300 + 1200)
 }
