@@ -10,6 +10,11 @@ body {
   margin: 0;
   padding: 0;
 }
+@media (max-width: 720px), print {
+  body {
+    font-size: 14px;
+  }
+}
 
 /*divs*/
 .content {
