@@ -15,6 +15,10 @@ body {
     font-size: 14px;
   }
 }
+a {
+  text-decoration: underline;
+  color: black;
+}
 
 /*divs*/
 .content {
